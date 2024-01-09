@@ -1,0 +1,35 @@
+html {
+	font-size: 10px;
+	font-family: 'Roboto', sans-serif;
+	background-color: #d2d7df;
+}
+
+h1 {
+	font-size: 60px;
+	text-align: left;
+	margin: 0;
+	padding: 20px 0;
+	color: black;
+}
+
+p {
+	font-size: 17px;
+	line-height: 2px;
+	letter-spacing: 1px;
+}
+
+body {
+	margin: 0 auto;
+	padding: 0 20px 20px 20px;
+}
+
+.button-link{
+	font-size: 20px;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: #1b4965;
+	color: #fff;
+	border: 3px solid #fff07c;
+	border-radius: 10px;
+}

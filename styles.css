@@ -28,13 +28,44 @@ body {
 	overflow-wrap: break-word;
 }
 
-.button-link{
+.button-link-inactive{
 	font-size: 20px;
 	display: inline-block;
 	padding: 10px 20px;
 	text-decoration: none;
+	background-color: #d2d7df;
+	color: #1b4965;
+}
+
+.button-link-inactive:hover {
 	background-color: #1b4965;
 	color: #fff;
-	border: 3px solid #fff07c;
-	border-radius: 10px;
 }
+
+.button-link-active {
+	font-size: 20px;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: #d2d7df;
+	color: #1b4965;
+	border-bottom-width: 3px;
+	border-bottom-color: #1b4965;
+	border-bottom-style: solid;
+}
+
+.button-link-active:hover {
+	background-color: #1b4965;
+	color: #fff;
+}
+/*
+.button-link-active:hover::after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: #1b4965;
+	bottom: 0;
+	left: 0;
+}*/

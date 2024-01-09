@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="main.js" defer></script>
     </head>
 
     <body>
@@ -15,9 +16,16 @@
         <h1>How is the War in Ukraine Portrayed in American Media</h1>
 <!-- iframe header -->
         <div class = "iframe-header">
-            <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE" style="width; min-width: 100% !important; border: none;" height = "200">
-            </iframe>
-        </div>
+            <p>Select Year:</p>
+
+            <select onchange="switchVis(this.value)">
+                <option value="Da5oL">2021</option>
+                <option value="4ma8G">2022</option>
+                <option value="Qjx9t">2023</option>
+            </select>
+
+            <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE" aria-label="Table" id="datawrapper-chart-Qjx9t" src="https://datawrapper.dwcdn.net/Da5oL" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="850"></iframe>
+        </div> 
 
 <!-- word charts -->
         <div class="iframe-container">
@@ -54,4 +62,5 @@
         </div>
     </body>
 </html>
+</script>
 </script>

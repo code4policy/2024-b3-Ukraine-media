@@ -41,6 +41,16 @@ div {
 	display: block;
 }
 
+.local-press {
+  width: 30%; /* Adjust the width as needed */
+  margin: auto;
+  /*position: absolute;*/
+  top: 50%;
+  left: 50%;
+}
+
+
+/*button styles */
 .content {
 	max-width: 50%;
 	align-content: center;

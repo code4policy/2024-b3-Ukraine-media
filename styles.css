@@ -4,6 +4,15 @@ html {
 	background-color: #d2d7df;
 }
 
+body {
+	width: 95%;
+	padding: 20px 20px 20px 20px;
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
 h1 {
 	font-size: 60px;
 	text-align: left;
@@ -17,13 +26,6 @@ p {
 	font-size: 17px;
 	line-height: 1.5;
 	letter-spacing: 1px;
-
-}
-
-body {
-	width: 100%;
-	margin: 0 auto;
-	padding: 20px 20px 20px 20px;
 
 }
 

@@ -41,6 +41,13 @@ div {
 	display: block;
 }
 
+hr {
+	border: 1px solid black;
+	margin: 30px auto;
+	width: 50%;
+	text-align: center;
+}
+
 .centered {
   width: 1000px; /* Adjust the width as needed */
   margin: auto;

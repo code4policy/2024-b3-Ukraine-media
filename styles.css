@@ -37,6 +37,16 @@ p {
 
 }
 
+div {
+	display: block;
+}
+
+.content {
+	max-width: 50%;
+	align-content: center;
+	align-items: center;
+}
+
 .button-link-inactive{
 	font-size: 20px;
 	display: inline-block;

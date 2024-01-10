@@ -10,92 +10,103 @@
     </head>
 
     <body>
-
-<!-- top navigation bars -->
-        <a href="index.html", class="button-link-active">Home</a>
-        <a href="our-team/index.html", class="button-link-inactive">Our Team</a>
+        <!-- top navigation bars -->
+        <div class="nav">
+            <a href="index.html", class="button-link-active">Home</a>
+            <a href="our-team/index.html", class="button-link-inactive">Our Team</a>
+        </div>
       
         <h1><strong>How the War in Ukraine is Portrayed <br> in the American Media</strong></h1>
 
-<!-- introduction to research -->
-
-        <p>On February 24, 2022, Russia launched a full-scale invasion of Ukraine. In response, many NATO member nations, including the United States, have sent financial, humanitarian, and military aid to Ukraine to support their efforts. As the war has played out, providing this aid has become a political football in the United States with the latest relief legislation failing in Congress in December 2023 after being panned by Republican Members of Congress. As support for providing aid to Ukraine begins to show cracks along ideological lines, we aim to investigate how the war in Ukraine is portrayed by media outlets across the political spectrum and how these may contribute to this development.</p>
-
-        <h2>American Network Television Media</h2>
-
-        <p>The table below demonstrates how often each of the three main network news agencies used a specific word (left column) within three minutes of using the word "Ukraine" compared to the average of all three agencies. A high value indicates a network used the selected word more in comparison to the other networks, while a lower value indcates a network used the selected word less in comparison to the other networks. Each value represents how many standard deviations each networks value is from the average of all three networks. All data is cumulative by year.</p>
-
-<!-- word chart change by year -->
-
-        <p>Select Year:
-            <select onchange="switchVis(this.value)">
-                <option value="Da5oL">2021</option>
-                <option value="4ma8G">2022</option>
-                <option value="Qjx9t">2023</option>
-            </select>
-        </p>
-
-        <div class = "iframe-main">
-            <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE" aria-label="Table" id="datawrapper-chart-Qjx9t" src="https://datawrapper.dwcdn.net/Da5oL" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="850"></iframe>
-        </div> 
-
-<!-- word charts -->
-        <div class="iframe-triple-container">
-
-            <p>Alina to add a little note explaining the results below here</p>
-
-            <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE (2021)" aria-label="Table" id="datawrapper-chart-Da5oL" src="https://datawrapper.dwcdn.net/Da5oL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 33% !important; border: none;" height="850" data-external="1"></iframe>
-
-            <p>Alina to add a little note explaining the results below here</p>
-
-            <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE (2022)" aria-label="Table" id="datawrapper-chart-4ma8G" src="https://datawrapper.dwcdn.net/4ma8G/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 33% !important; border: none;" height="850" data-external="1"></iframe>
-
-
-             <p>Alina to add a little note explaining the results below here</p>
-            <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE (2023)" aria-label="Table" id="datawrapper-chart-Qjx9t" src="https://datawrapper.dwcdn.net/Qjx9t/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 33% !important; border: none;" height="850" data-external="1">></iframe>
-        </div>
-        <p>We also examined the volume of coverage the main three cable news networks dedicate to stories regarding Ukraine over the course of the war and compare it to the volume of stories about Ukraine mentioning either "corrupt", "Biden", or "Burisma". Surprisingly, all three outlets produce similar trends throughout their coverage.</p>
-
-
-<!-- longitudinal charts -->
-    <!-- chart 1 -->
-    <p>Alina to add a little note explaining the results below here</p>
-        <div class="iframe-container">
-
-            <iframe title="MSNBC COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-dongo" src="https://datawrapper.dwcdn.net/dongo/1/" scrolling="yes" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="365" data-external="1"></iframe>
-            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-            </script>
+        <!-- introduction to research -->
+        <div class="intro">
+            <p>On February 24, 2022, Russia launched a full-scale invasion of Ukraine. In response, many NATO member nations, including the United States, have sent financial, humanitarian, and military aid to Ukraine to support their efforts. As the war has played out, providing this aid has become a political football in the United States with the latest relief legislation failing in Congress in December 2023 after being panned by Republican Members of Congress. As support for providing aid to Ukraine begins to show cracks along ideological lines, we aim to investigate how the war in Ukraine is portrayed by media outlets across the political spectrum and how these may contribute to this development.</p>
         </div>
 
-    <!-- chart 2 -->
-    <p>Alina to add a little note explaining the results below here</p>
-        <div class="iframe-container">
+        <!-- national tv section -->
+        <div class="national-tv">
+            <h2>American Network Television Media</h2>
 
-            <iframe title="FOX NEWS COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-EON6G" src="https://datawrapper.dwcdn.net/EON6G/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="362" data-external="1"></iframe>
-            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-            </script>
+            <p>The table below demonstrates how often each of the three main network news agencies used a specific word (left column) within three minutes of using the word "Ukraine" compared to the average of all three agencies. A high value indicates a network used the selected word more in comparison to the other networks, while a lower value indcates a network used the selected word less in comparison to the other networks. Each value represents how many standard deviations each networks value is from the average of all three networks. All data is cumulative by year.</p>
+
+            <!-- word chart change by year -->
+
+            <p>Select Year:
+                <select onchange="switchVis(this.value)">
+                    <option value="Da5oL">2021</option>
+                    <option value="4ma8G">2022</option>
+                    <option value="Qjx9t">2023</option>
+                </select>
+            </p>
+
+            <div class = "iframe-main">
+                <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE" aria-label="Table" id="datawrapper-chart-Qjx9t" src="https://datawrapper.dwcdn.net/Da5oL" scrolling="no" frameborder="0" style="width: 0; min-width: 50% !important; border: none;" height="850"></iframe>
+            </div> 
+
+            <!-- word charts -->
+            <div class="iframe-triple-container">
+
+                <!-- <p>Alina to add a little note explaining the results below here</p> -->
+
+                <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE (2021)" aria-label="Table" id="datawrapper-chart-Da5oL" src="https://datawrapper.dwcdn.net/Da5oL/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 33% !important; border: none;" height="850" data-external="1"></iframe>
+
+                <!-- <p>Alina to add a little note explaining the results below here</p> -->
+
+                <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE (2022)" aria-label="Table" id="datawrapper-chart-4ma8G" src="https://datawrapper.dwcdn.net/4ma8G/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 33% !important; border: none;" height="850" data-external="1"></iframe>
+
+                <!-- <p>Alina to add a little note explaining the results below here</p> -->
+                <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE (2023)" aria-label="Table" id="datawrapper-chart-Qjx9t" src="https://datawrapper.dwcdn.net/Qjx9t/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 33% !important; border: none;" height="850" data-external="1">></iframe>
+            </div>
+
+            <p>We also examined the volume of coverage the main three cable news networks dedicate to stories regarding Ukraine over the course of the war and compare it to the volume of stories about Ukraine mentioning either "corrupt", "Biden", or "Burisma". Surprisingly, all three outlets produce similar trends throughout their coverage.</p>
+
+            <!-- longitudinal charts -->
+            <!-- <p>Alina to add a little note explaining the results below here</p> -->
+            <div class="longitudinal-charts">
+                <!-- chart 1 -->
+                <div class="iframe-container">
+                    <iframe title="MSNBC COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-dongo" src="https://datawrapper.dwcdn.net/dongo/1/" scrolling="yes" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="365" data-external="1"></iframe>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+                </div>
+
+                <!-- chart 2 -->
+                <div class="iframe-container">
+                    <iframe title="FOX NEWS COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-EON6G" src="https://datawrapper.dwcdn.net/EON6G/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="362" data-external="1"></iframe>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+                </div>
+
+                <!-- chart 3 -->
+                <div class="iframe-container">
+                    <iframe title="CNN COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-4KBpv" src="https://datawrapper.dwcdn.net/4KBpv/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="391" data-external="1"></iframe>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+                </div>
+            </div>
         </div>
 
-    <!-- chart 3 -->
-    <p>Alina to add a little note explaining the results below here</p>
-        <div class="iframe-container">
-            <iframe title="CNN COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-4KBpv" src="https://datawrapper.dwcdn.net/4KBpv/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="391" data-external="1"></iframe>
-            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-            </script>
+        <!-- national press section -->
+        <div class="national-press">
+            <h2>American National Press</h2>
+
+            <p>American national press coverage contains orders of magnitude more sources than television network news. The graphs below pull stories published by sources frequently tweeted by either Democrats or Republicans. The first graph depicts the share of these sources' coverage dedicated to covering Ukraine measured against each other. The second graph depicts the share of these sources' coverage didicated to covering Ukraine including mentions of "corrupt" or "corruption" measured against each other. Noteably, each group's share of coverage dedicated to covering Ukraine appears to be spread evenly between the two sources, while sources most frequently tweeted by Republican voters include more mentions of "corrupt" or "corruption".</p>
+
+            <div class="iframe-double-container">
+                <iframe title="PERCENT OF COVERAGE DEDICATED TO UKRAINE BY MEDIA SOURCE" aria-label="Interactive area chart" id="datawrapper-chart-Lri3F" src="https://datawrapper.dwcdn.net/Lri3F/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="363" data-external="1"></iframe>
+                <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                </script>
+
+                <iframe title="PERCENTAGE OF COVERAGE FEATURING UKRAINE WITH MENTIONS OF CORRUPTION" aria-label="Interactive area chart" id="datawrapper-chart-MdeXf" src="https://datawrapper.dwcdn.net/MdeXf/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="356" data-external="1"></iframe>
+                <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                </script>
+            </div>
         </div>
 
-        <h2>American National Press</h2>
-
-        <p>American national press coverage contains orders of magnitude more sources than television network news. The graphs below pull stories published by sources frequently tweeted by either Democrats or Republicans. The first graph depicts the share of these sources' coverage dedicated to covering Ukraine measured against each other. The second graph depicts the share of these sources' coverage didicated to covering Ukraine including mentions of "corrupt" or "corruption" measured against each other. Noteably, each group's share of coverage dedicated to covering Ukraine appears to be spread evenly between the two sources, while sources most frequently tweeted by Republican voters include more mentions of "corrupt" or "corruption.</p>
-
-        <div class="iframe-double-container">
-            <iframe title="PERCENT OF COVERAGE DEDICATED TO UKRAINE BY MEDIA SOURCE" aria-label="Interactive area chart" id="datawrapper-chart-Lri3F" src="https://datawrapper.dwcdn.net/Lri3F/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="363" data-external="1"></iframe>
-            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-            </script>
-
-            <iframe title="PERCENTAGE OF COVERAGE FEATURING UKRAINE WITH MENTIONS OF CORRUPTION" aria-label="Interactive area chart" id="datawrapper-chart-MdeXf" src="https://datawrapper.dwcdn.net/MdeXf/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="356" data-external="1"></iframe>
-            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-            </script>
+        <!--state and local press -->
+        <div class="local-press">
+            <iframe title="Mentions of Ukraine across Top 10 Populated States" aria-label="Datawrapper visualization" src="https://datawrapper.dwcdn.net/NQAu8/" scrolling="no" frameborder="0" height="400" style="width: 0px; min-width: 100%; border: none; height: 399px;"></iframe>
+        </div>
     </body>
 </html>
 </script>

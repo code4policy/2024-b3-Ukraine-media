@@ -56,6 +56,12 @@ hr {
   left: 50%;
 }
 
+.centered-clipped {
+	width: 1000px;
+ 	margin: auto;
+ 	top: 50px;
+ 	left: 50%;
+}
 
 /*button styles */
 .content {

@@ -21,12 +21,40 @@ h1 {
 	color: black;
 }
 
+h2 {
+	font-size: 40px;
+	text-align: left;
+	margin: 0;
+	padding: 20px 0;
+	color: black;
+}
+
 p {
 	width: 100%;
 	font-size: 17px;
 	line-height: 1.5;
 	letter-spacing: 1px;
 
+}
+
+div {
+	display: block;
+}
+
+.centered {
+  width: 30%; /* Adjust the width as needed */
+  margin: auto;
+  /*position: absolute;*/
+  top: 50%;
+  left: 50%;
+}
+
+
+/*button styles */
+.content {
+	max-width: 50%;
+	align-content: center;
+	align-items: center;
 }
 
 .button-link-inactive{

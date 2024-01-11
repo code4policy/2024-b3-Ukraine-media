@@ -100,3 +100,48 @@ hr {
 	background-color: #1b4965;
 	color: #fff;
 }
+
+/* Add a class to the image and apply border-radius */
+.rounded-image {
+    border-radius: 50%; /* Set to 50% for a circular shape */
+    width: 200px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+    justify-content: center;
+    align-items: center; /* center the image*/
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    border: 2px solid #000; /* Add a 2px solid black border */
+}
+
+/* Create a class for the container */
+.container {
+    display: flex; /* Use flexbox for layout */
+}
+
+/* Create a class for the column */
+.column {
+    flex-grow: 1; /* Allow columns to grow and take available space */
+    width: 200px; /* Set the desired width for each column */
+    height: 100px; /* Set the desired height for each column */
+    margin-right: 10px; /* Adjust as needed */
+}
+
+/* Create a class for the card */
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid #800000; /* Add a border around the card */
+    padding: 10px; /* Add padding to the card */
+}
+
+/* Create a class for the text container */
+.text-container {
+    margin-top: 10px; /* Add margin between image and text */
+}
+
+/* Style the heading within the card */
+.card h2 {
+    text-align: center; /* Center the heading text */
+    margin-bottom: 10px; /* Add some space below the heading */
+}

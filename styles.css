@@ -168,6 +168,33 @@ hr {
 /* Change button background on hover */
 .linkedin-button:hover {
     background-color: #005885;
+}
+
+/* copy button */
+#copyContainer {
+    text-align: center;
+    margin-top: 50px;
+}
+
+#textToCopy {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#copyButton {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+#copyButton:hover {
+    background-color: #45a049;
+}
 
 
 

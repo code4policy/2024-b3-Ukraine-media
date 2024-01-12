@@ -172,32 +172,27 @@ hr {
 
 /* copy button */
 #copyContainer {
-    text-align: center;
-    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #textToCopy {
     background-color: #f0f0f0;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid black;
     margin-bottom: 10px;
+    flex: 1; /* Allow the text to take available space */
 }
 
 #copyButton {
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 13px;
+    margin-left: 10px; /* Add margin to the left of the button */
 }
-
-#copyButton:hover {
-    background-color: #45a049;
-}
-
-
-
-
 
 

@@ -5,31 +5,27 @@ function switchVis(chartId) {
 
 // function for copy button
 document.addEventListener('DOMContentLoaded', function() {
-    // Find the copy button element
-    var copyButton = document.getElementById('copyButton');
+    // Add a click event listener to the APA copy button
+    var copyButtonAPA = document.getElementById('copyButtonAPA');
+    copyButtonAPA.addEventListener('click', function() {
+        copyTextToClipboard('textToCopyAPA');
+    });
 
-    // Add a click event listener to the copy button
-    copyButton.addEventListener('click', function() {
-        // Find the text you want to copy
-        var textToCopy = document.getElementById('textToCopy');
+    // Add a click event listener to the Chicago copy button
+    var copyButtonChicago = document.getElementById('copyButtonChicago');
+    copyButtonChicago.addEventListener('click', function() {
+        copyTextToClipboard('textToCopyChicago');
+    });
 
-        // Create a textarea element to temporarily hold the text
+    // Function to copy text to clipboard
+    function copyTextToClipboard(textElementId) {
+        var textToCopy = document.getElementById(textElementId);
         var textarea = document.createElement('textarea');
         textarea.value = textToCopy.innerText;
-
-        // Append the textarea to the document
         document.body.appendChild(textarea);
-
-        // Select the text inside the textarea
         textarea.select();
-
-        // Copy the selected text to the clipboard
         document.execCommand('copy');
-
-        // Remove the textarea element from the document
         document.body.removeChild(textarea);
-
-        // Optionally, you can provide feedback to the user
         alert('Text copied to clipboard!');
-    });
+    }
 });

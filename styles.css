@@ -196,3 +196,36 @@ hr {
 }
 
 
+
+
+/* copy button for APA citation */
+#copyContainerAPA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textToCopyAPA {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    flex: 1; /* Allow the text to take available space */
+}
+
+#copyButtonAPA {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px; /* Add margin to the left of the button */
+}
+
+
+
+
+
+
+

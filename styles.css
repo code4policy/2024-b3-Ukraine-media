@@ -30,12 +30,6 @@ h2 {
 	color: black;
 }
 
-p {
-	width: 100%;
-	font-size: 17px;
-	line-height: 1.5;
-	letter-spacing: 1px;
-
 }
 
 div {
@@ -169,6 +163,10 @@ hr {
 .linkedin-button:hover {
     background-color: #005885;
 
+
+
+
+/* toggle function for references*/
 
 
 

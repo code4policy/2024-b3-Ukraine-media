@@ -3,6 +3,7 @@ function switchVis(chartId) {
   document.querySelector('iframe').src = 'https://datawrapper.dwcdn.net/' + chartId;
 }
 
+// function for creating citation copy buttons
 document.addEventListener('DOMContentLoaded', function() {
     // Add a click event listener to the APA copy button
     var copyButtonAPA = document.getElementById('copyButtonAPA');

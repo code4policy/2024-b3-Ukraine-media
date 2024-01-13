@@ -18,5 +18,78 @@
         <a href="our-team/index.html", class="button-link-inactive">Our Team</a>
         <h1>Television Media</h1>
     </div>
+    <!-- national tv section -->
+        <div class="centered">
+            <h2 class="centered">American Network Television Media</h2>
+
+            <p class="centered">The table below demonstrates how often each of the three main network news agencies used a specific word (left column) within three minutes of using the word "Ukraine" compared to the average of all three agencies. A high value indicates a network used the selected word more in comparison to the other networks, while a lower value indcates a network used the selected word less in comparison to the other networks. Each value represents how many standard deviations each networks value is from the average of all three networks. All data is cumulative by year.</p>
+
+            <br><br>
+
+            <div class="boxed">
+                <h3>How to use this Chart</h3>
+                <li>First, select the year from which you would like to view data.</li>
+                <li>The chart will display each network's relative useage for each word.</li>
+                <li>You can sort the chart for each network's values by clicking on the network name at the top of each column.</li>
+                <li>By clicking on the column header, you will sort the values for that column in either ascending or descending order on alternate clicks indicated by a small arrow to the left of each network name.</li>
+                <li>Red highlighted cells represent a higher value while blue highlighted cells represent a lower value.</li>
+            </div>
+
+            <br><br><br>
+            <!-- word chart change by year -->
+
+            <p class="centered"><strong>Select Year:</strong>
+                <select onchange="switchVis(this.value)">
+                    <option value="Da5oL">2021</option>
+                    <option value="4ma8G">2022</option>
+                    <option value="Qjx9t">2023</option>
+                </select>
+            </p>
+
+            <br>
+
+            <!-- class for word chart -->
+
+            <div class = "centered">
+                <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE" aria-label="Table" id="datawrapper-chart-Qjx9t" src="https://datawrapper.dwcdn.net/Da5oL" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="850"></iframe>
+            </div>
+            <div class="centered">
+                <a href="word_analysis.xlsx" download="word_analysis.xlsx">
+                <button class="dlbutton">Download Underlying Data</button>
+                </a>
+            </div>
+
+            <hr>
+
+            <!-- longitudinal charts -->
+            <p class="centered">We also examined the volume of coverage the main three cable news networks dedicate to stories regarding Ukraine over the course of the war and compare it to the volume of stories about Ukraine mentioning either "corrupt", "Biden", or "Burisma". Surprisingly, all three outlets produce similar trends throughout their coverage.</p>
+
+            <br><br><br>
+
+            <!-- <p>Alina to add a little note explaining the results below here</p> -->
+            <div class="longitudinal-charts">
+                <!-- chart 1 -->
+                <div class="iframe-container">
+                    <iframe title="MSNBC COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-dongo" src="https://datawrapper.dwcdn.net/dongo/1/" scrolling="yes" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="365" data-external="1"></iframe>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+                </div>
+
+                <!-- chart 2 -->
+                <div class="iframe-container">
+                    <iframe title="FOX NEWS COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-EON6G" src="https://datawrapper.dwcdn.net/EON6G/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="362" data-external="1"></iframe>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+                </div>
+
+                <!-- chart 3 -->
+                <div class="iframe-container">
+                    <iframe title="CNN COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-4KBpv" src="https://datawrapper.dwcdn.net/4KBpv/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="391" data-external="1"></iframe>
+                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+                    </script>
+                </div>
+            </div>
+        </div>
+        <hr>
     </body>
 </html>

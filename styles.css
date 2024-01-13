@@ -1,5 +1,5 @@
 html {
-	font-size: 10px;
+	font-size: 17px;
 	font-family: 'Roboto', sans-serif;
 	background-color: #d2d7df;
 }
@@ -30,12 +30,18 @@ h2 {
 	color: black;
 }
 
+h3 {
+	font-size: 30px;
+	text-align: left;
+	margin: 0;
+	color: whitesmoke;
+}
+
 p {
 	width: 100%;
 	font-size: 17px;
 	line-height: 1.5;
 	letter-spacing: 1px;
-
 }
 
 div {
@@ -47,6 +53,21 @@ hr {
 	margin: 30px auto;
 	width: 50%;
 	text-align: center;
+}
+
+li {
+	font-size: 17px;
+}
+
+.boxed {
+  	padding: 30px;
+  	line-height: 2;
+  	margin: auto;
+  	font-weight: 1000;
+  	background-color: #1b4965;
+  	color: #fff;
+
+
 }
 
 .centered {
@@ -168,6 +189,15 @@ hr {
 /* Change button background on hover */
 .linkedin-button:hover {
     background-color: #005885;
+} 
+
+.dlbutton {
+	color: #fff;
+	font-size: 20px;
+	display: inline-block;
+	padding: 10px 20px;
+	text-decoration: none;
+	background-color: #1b4965;
 }
 
 /* copy button */
@@ -194,8 +224,6 @@ hr {
     font-size: 13px;
     margin-left: 10px; /* Add margin to the left of the button */
 }
-
-
 
 /* copy button for APA citation */
 #copyContainerAPA {
@@ -271,8 +299,3 @@ hr {
     font-size: 13px;
     margin-left: 10px; /* Add margin to the left of the button */
 }
-
-
-
-
-

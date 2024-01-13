@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="main.js" defer></script>
     </head>
 
 <!-- navigation buttons -->
@@ -59,7 +60,7 @@
             <!-- word chart change by year -->
 
             <p class="centered"><strong>Select Year:</strong>
-                <select onchange="switchVis(this.value)">
+                <select id="yearSelector" onchange="switchVis(this.value)">
                     <option value="Da5oL">2021</option>
                     <option value="4ma8G">2022</option>
                     <option value="Qjx9t">2023</option>
@@ -77,6 +78,7 @@
                 <a href="word_analysis.xlsx" download="word_analysis.xlsx">
                 <button class="dlbutton">Download Underlying Data</button>
                 </a>
+                <a href="" id="downloadLink" download=""><button class="dlbutton" onclick="downloadChart()">Download Chart</button></a>
             </div>
 
             <hr>

@@ -47,11 +47,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-  if (!twitterWindow) {
-    console.error('Failed to open Twitter share window. Make sure popups are allowed for this site.');
-    }
-}
-
 /* Download Chart Button */
 function downloadChart() {
   // Get the selected year from the dropdown

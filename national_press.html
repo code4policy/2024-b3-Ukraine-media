@@ -100,11 +100,22 @@
             <li class="centered" style="line-height: 2">Unlike FoxNews, CNN didn't shy away from the term "war" and mentioned Putin a lot more frequently. It tended to cover Ukraine in conjunction with Israel less often, focusing more on Wagner group and China.</li>
 
 
-               <div class="centered">
-                <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; align-items: center;">
-                    <img src="fox_1year.png" alt="Fox 1-Year Wordcloud" style="max-width: 45%; height: auto;">
-                    <img src="cnn_1year.png" alt="CNN 1-Year Wordcloud" style="max-width: 45%; height: auto;">
+            <div class="centered">
+                 <!-- Add title here -->
+
+                <div id="wordcloud-container" class="centered">
+                    <div class="wordcloud-card">
+                        <h3 class="wordcloud-title">FoxNews</h3>
+                        <img class="wordcloud-image" src="fox_1year.png" alt="Fox 1-Year Wordcloud">
+                    </div>
+                    <div class="wordcloud-card">
+                        <h3 class="wordcloud-title">CNN</h3>
+                        <img class="wordcloud-image" src="cnn_1year.png" alt="CNN 1-Year Wordcloud">
+                    </div>
                 </div>
+
+                <!-- add footnote here -->
+
         
                 <div style="display: flex; gap: 20px; justify-content: center; margin-top: 20px;">
                 <a href="fox_1year.png" download="fox_1year">
@@ -113,6 +124,7 @@
                 <a href="cnn_1year.png" download="cnn_1year">
                     <button class="dlbutton">Download CNN Image</button>
                 </a>
+                <a href="Ukraine_term_association_FOX_CNN_2023.xlsx" download="Ukraine_term_association_FOX_CNN_2023">
                     <button class="dlbutton">Download Underlying Data</button>
             </div>
 </div>

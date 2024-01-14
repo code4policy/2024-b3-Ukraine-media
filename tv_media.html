@@ -6,6 +6,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="main.js" defer></script>
     </head>
 
 <!-- navigation buttons -->
@@ -22,7 +23,27 @@
         <div class="centered">
             <h2 class="centered">American Network Television Media</h2>
 
-            <p class="centered">The table below demonstrates how often each of the three main network news agencies used a specific word (left column) within three minutes of using the word "Ukraine" compared to the average of all three agencies. A high value indicates a network used the selected word more in comparison to the other networks, while a lower value indcates a network used the selected word less in comparison to the other networks. Each value represents how many standard deviations each networks value is from the average of all three networks. All data is cumulative by year.</p>
+            <p class="centered">While most major network television new sources have covered the war in Ukraine, not all coverage is the same. Different stations have different agendas and their coverage of events is colored by these biases. The table below analyzes the coverage of Ukraine by the three main network television sources by examining their relative use of seleted words included in their coverage of Ukraine.</p>
+
+            <br>
+
+            <p class="centered">To examine this, we developed a list of words that might signal the tone or context of a given story on Ukraine (left column). We then gathered data totaling how many times each station included this word within 3 minutes of using the word "Ukraine". Using these totals, we determined the average useage of each word across all three stations by year and the standard deviation of the three values. Standard deviation is a common statistical measure of the spread of values in a given set of values, think: the average distance of each value in a set from the average. The values depicted in the table below indicate each stations distance, measured in standard deviation, away from the average of all three, also known as a z-score.</p>
+
+            <br>
+
+            <p class="centered"> <strong>Put simply, extreme values (more than 1 or less than -1) indicate a station used this word much more frequently or much less frequently than the average of all three stations.</strong> Higher values mean a network used a word more frequently in association with the word "Ukraine" than the average across the three networks. All data is cumulative by year. To examine the underlying data, download the excel below.</p>
+
+            <br><br>
+
+            <h3 class="centered" style="color:black">Key Takeaways</h3>
+            
+            <br>
+
+            <li>In 2023, Fox News used words like "Burisma", "Hunter" (Biden), "corrupt", and "nazi" much more frequently than  CNN or MSNBC.</li>
+            <br>
+            <li>In 2023, CNN used words like "relief", "invasion", and "investigation" much more frequently than Fox News or MSNBC.</li>
+            <br>
+            <li>In 2023, MSNBC use words like "aid", "Putin", and "conflict" much less frequently than Fox News or CNN.</li>
 
             <br><br>
 
@@ -39,7 +60,7 @@
             <!-- word chart change by year -->
 
             <p class="centered"><strong>Select Year:</strong>
-                <select onchange="switchVis(this.value)">
+                <select id="yearSelector" onchange="switchVis(this.value)">
                     <option value="Da5oL">2021</option>
                     <option value="4ma8G">2022</option>
                     <option value="Qjx9t">2023</option>
@@ -55,7 +76,10 @@
             </div>
             <div class="centered">
                 <a href="word_analysis.xlsx" download="word_analysis.xlsx">
-                <button class="dlbutton">Download Underlying Data</button>
+                    <button class="dlbutton">Download Underlying Data</button>
+                </a>
+                <a href="" id="downloadLink" download="">
+                    <button class="dlbutton" onclick="downloadChart()">Download Current Chart</button>
                 </a>
             </div>
 
@@ -73,20 +97,36 @@
                     <iframe title="MSNBC COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-dongo" src="https://datawrapper.dwcdn.net/dongo/1/" scrolling="yes" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="365" data-external="1"></iframe>
                     <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
                     </script>
+                    <a href="msnbc_coverage.png" download="msnbc_coverage.png">
+                        <button class="dlbutton">Download Chart</button>
+                    </a>
                 </div>
+
+                <br><br><br>
 
                 <!-- chart 2 -->
                 <div class="iframe-container">
                     <iframe title="FOX NEWS COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-EON6G" src="https://datawrapper.dwcdn.net/EON6G/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="362" data-external="1"></iframe>
                     <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
                     </script>
+                    <a href="fox_coverage.png" download="fox_coverage.png">
+                        <button class="dlbutton">Download Chart</button>
+                    </a>
                 </div>
+
+                <br><br><br>
 
                 <!-- chart 3 -->
                 <div class="iframe-container">
                     <iframe title="CNN COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-4KBpv" src="https://datawrapper.dwcdn.net/4KBpv/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="391" data-external="1"></iframe>
                     <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
                     </script>
+                    <a href="cnn_coverage.png" download="cnn_coverage.png">
+                        <button class="dlbutton">Download Chart</button>
+                    </a>
+                    <a href="network_ukraine_coverage.csv" download="network_ukraine_coverage.csv">
+                        <button class="dlbutton">Download Underlying Data</button>
+                    </a>
                 </div>
             </div>
         </div>

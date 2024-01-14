@@ -47,11 +47,33 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+  if (!twitterWindow) {
+    console.error('Failed to open Twitter share window. Make sure popups are allowed for this site.');
+    }
+}
 
+/* Download Chart Button */
+function downloadChart() {
+  // Get the selected year from the dropdown
+  var selectedValue = document.getElementById("yearSelector").value;
 
+  var selectedYear;
+  switch (selectedValue) {
+    case "Da5oL":
+      selectedYear = "2021";
+      break;
+    case "4ma8G":
+      selectedYear = "2022";
+      break;
+    case "Qjx9t":
+      selectedYear = "2023";
+      break;
+  }
 
+  // Construct the filename based on the selected year
+  var fileName = selectedYear + "_heat_chart.png";
 
+  document.getElementById("downloadLink").href = fileName;
+  document.getElementById("downloadLink").download = fileName;
 
-
-
-
+}

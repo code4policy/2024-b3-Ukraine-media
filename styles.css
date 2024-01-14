@@ -37,6 +37,13 @@ h3 {
 	color: whitesmoke;
 }
 
+h4 {
+	font-size: 25px;
+	text-align: center;
+	margin: 0;
+	color: black;
+}
+
 p {
 	width: 100%;
 	font-size: 17px;
@@ -198,4 +205,104 @@ li {
 	padding: 10px 20px;
 	text-decoration: none;
 	background-color: #1b4965;
+}
+
+/* copy button */
+#copyContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textToCopy {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    flex: 1; /* Allow the text to take available space */
+}
+
+#copyButton {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px; /* Add margin to the left of the button */
+}
+
+/* copy button for APA citation */
+#copyContainerAPA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textToCopyAPA {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    flex: 1; /* Allow the text to take available space */
+}
+
+#copyButtonAPA {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px; /* Add margin to the left of the button */
+}
+
+/* copy button for Chicago citation */
+#copyContainerChicago {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textToCopyChicago {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    flex: 1; /* Allow the text to take available space */
+}
+
+#copyButtonChicago {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px; /* Add margin to the left of the button */
+}
+
+/* copy button for MLA citation */
+#copyContainerMLA {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#textToCopyMLA {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    flex: 1; /* Allow the text to take available space */
+}
+
+#copyButtonMLA {
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 13px;
+    margin-left: 10px; /* Add margin to the left of the button */
 }

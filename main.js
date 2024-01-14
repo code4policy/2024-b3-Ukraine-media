@@ -3,26 +3,49 @@ function switchVis(chartId) {
   document.querySelector('iframe').src = 'https://datawrapper.dwcdn.net/' + chartId;
 }
 
-function shareOnTwitter() {
-  var imageElement = document.getElementById('test-wordcloud.png');
+// function for creating citation copy buttons
+document.addEventListener('DOMContentLoaded', function() {
+    // Add a click event listener to the APA copy button
+    var copyButtonAPA = document.getElementById('copyButtonAPA');
+    copyButtonAPA.addEventListener('click', function() {
+        copyTextToClipboard('textToCopyAPA', copyButtonAPA);
+    });
 
-  if (!imageElement) {
-    console.error('Image element not found.');
-    return;
+    // Add a click event listener to the Chicago copy button
+    var copyButtonChicago = document.getElementById('copyButtonChicago');
+    copyButtonChicago.addEventListener('click', function() {
+        copyTextToClipboard('textToCopyChicago', copyButtonChicago);
+    });
+
+    // Add a click event listener to the MLA copy button
+    var copyButtonMLA = document.getElementById('copyButtonMLA');
+    copyButtonMLA.addEventListener('click', function() {
+        copyTextToClipboard('textToCopyMLA', copyButtonMLA);
+    });
+
+    // Function to copy text to clipboard
+    function copyTextToClipboard(textElementId, copyButton) {
+        var textToCopy = document.getElementById(textElementId);
+        var textarea = document.createElement('textarea');
+        textarea.value = textToCopy.innerText;
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+
+        // Change button color and text
+        copyButton.style.backgroundColor = '#45a049'; // Change to the desired color
+        copyButton.style.borderColor = '#45a049'; // Add border color
+        copyButton.innerText = 'Copied!';
+
+        // Reset button after a delay (you can adjust the delay as needed)
+        setTimeout(function() {
+            copyButton.style.backgroundColor = ''; // Reset to the original color
+            copyButton.style.borderColor = ''; // Remove border color
+            copyButton.innerText = 'Copy Citation';
+        }, 2000); // Adjust the delay in milliseconds
     }
-
-  var imageSource = imageElement.src;
-
-  if (!imageSource) {
-    console.error('Image source not found.');
-    return;
-    }
-
-  var encodedImageSource = encodeURIComponent(imageSource);
-  var twitterShareUrl = 'https://twitter.com/intent/tweet?text=Check%20out%20this%20image&url=' + encodedImageSource;
-
-  // Open Twitter share window
-  var twitterWindow = window.open(twitterShareUrl, '_blank');
+});
 
   if (!twitterWindow) {
     console.error('Failed to open Twitter share window. Make sure popups are allowed for this site.');

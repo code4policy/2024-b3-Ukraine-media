@@ -96,6 +96,7 @@ li {
 .centered-clipped {
 	width: 1000px;
  	margin: auto;
+    text-align: center;
  	top: 50px;
  	left: 50%;
 }

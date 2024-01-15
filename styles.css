@@ -76,7 +76,7 @@ li {
 }
 
 .boxed {
-  	padding: 30px;
+  	padding: 10px 30px 20px;
   	line-height: 2;
   	margin: auto;
   	font-weight: 1000;

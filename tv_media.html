@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>National Press</title>
+        <title>Television Media</title>
         <link href="styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,115 +21,157 @@
         <a href="our-team/index.html", class="button-link-inactive">Our Team</a>
         <h1>American Network Television Media</h1>
     </div>
-    <!-- national tv section -->
-        <div class="centered">
 
-            <p class="centered">While most major network television new sources have covered the war in Ukraine, not all coverage is the same. Different stations have different agendas and their coverage of events is colored by these biases. The table below analyzes the coverage of Ukraine by the three main network television sources by examining their relative use of seleted words included in their coverage of Ukraine.</p>
+<!-- introduction to page -->
+    <div class="centered">
+        <p class="centered">While most major network television news sources have covered the war in Ukraine, not all coverage is the same. Different stations have different agendas and their coverage of events is colored by these biases. The table below analyzes the coverage of Ukraine by the three main network television sources: CNN, Fox, and MSNBC. The table illustrates their relative use of selected words included in their coverage of Ukraine.</p>
 
-            <br>
+        <br>
 
-            <p class="centered">To explore this, we developed a list of words that might signal the tone or context of a given story on Ukraine (left column). We then gathered data totaling how many times each station included this word within 3 minutes of using the word "Ukraine." Using these totals, we determined the average useage of each word across all three stations by year and the standard deviation of the three values. Standard deviation is a common statistical measure of the spread of a set of values relative to their average. The values depicted below indicate the distance, measured in standard deviation, each station is away from the average of all three, also known as a z-score.</p>
+        <p class="centered">To explore this, we developed a list of words that might signal the tone or context of a given story on Ukraine (left column). We then gathered data totaling how many times each station included this word within 3 minutes of using the word "Ukraine." Using these totals, we determined the average useage of each word across all three stations by year and the standard deviation of the three values. Standard deviation is a common statistical measure of the spread of a set of values relative to their average. The values depicted below indicate the distance, measured in standard deviation, each station is away from the average of all three, also known as a z-score.</p>
 
-            <br>
+        <br>
 
-            <p class="centered">Put simply, extreme values (less than -1 or more than 1) indicate a station used this word much more frequently or much less frequently than the average of all three stations. Higher values mean a network used a word more frequently in association with the word "Ukraine" than the average across the three networks. All data is cumulative by year. To examine the underlying data, download the excel below.</p>
+        <p class="centered">Put simply, extreme values (less than -1 or more than 1) indicate a station used this word much more frequently or much less frequently than the average of all three stations. Higher values mean a network used a word more frequently in association with the word "Ukraine" than the average across the three networks. All data is cumulative by year. To examine the underlying data, click the download button below.</p>
 
-            <br><br>
+        <br><br>
 
-            <h3 class="centered" style="color:black">Key Takeaways</h3>
+<!-- key takeaways section -->
+
+        <h3 class="centered" style="color:black">Key Takeaways</h3>
             
-            <br>
+        <br>
 
-            <li>In 2023, Fox News used words like "Burisma", "Hunter" (Biden), "corrupt", and "nazi" much more frequently than  CNN or MSNBC.</li>
-            <br>
-            <li>In 2023, CNN used words like "relief", "invasion", and "investigation" much more frequently than Fox News or MSNBC.</li>
-            <br>
-            <li>In 2023, MSNBC use words like "aid", "Putin", and "conflict" much less frequently than Fox News or CNN.</li>
+        <li>In 2023, Fox News used words like "Burisma", "Hunter" (Biden), "corrupt", and "Nazi" much more frequently than  CNN or MSNBC. (Burisma refers to Burisma Holdings Ltd., which is one of Ukraine's largest oil and gas companies; Hunter Biden <a href="https://www.factcheck.org/2022/03/hunter-biden-left-ukrainian-company-in-2019-contrary-to-ted-nugent-post/"> served</a> on the company's board from 2014 to 2019.)</li>
 
-            <br><br>
+        <br>
+            
+        <li>CNN used words like "relief", "invasion", and "investigation" much more frequently in 2023 than Fox News or MSNBC.</li>
+            
+        <br>
+            
+        <li>In 2022, MSNBC only used the word "Trump" more frequently than CNN or Fox News when discussing Ukraine. It did not use any words more frequently in 2023 than the other two networks. However, it did use words like "aid", "Putin", and "conflict" much less frequently than Fox News or CNN.</li>
 
-            <div class="boxed">
-                <h3>How to use this Chart</h3>
-                <li>First, select the year from which you would like to view data.</li>
-                <li>The chart will display each network's relative useage for each word.</li>
-                <li>You can sort the chart for each network's values by clicking on the network name at the top of each column.</li>
-                <li>By clicking on the column header, you will sort the values for that column in either ascending or descending order on alternate clicks indicated by a small arrow to the left of each network name.</li>
-                <li>Red highlighted cells represent a higher value while blue highlighted cells represent a lower value.</li>
-            </div>
+        <br><br>
 
-            <br><br><br>
-            <!-- word chart change by year -->
-
-            <p class="centered"><strong>Select Year:</strong>
-                <select id="yearSelector" onchange="switchVis(this.value)">
-                    <option value="Da5oL">2021</option>
-                    <option value="4ma8G">2022</option>
-                    <option value="Qjx9t">2023</option>
-                </select>
-            </p>
-
-            <br>
-
-            <!-- class for word chart -->
-
-            <div class = "centered">
-                <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE" aria-label="Table" id="datawrapper-chart-Qjx9t" src="https://datawrapper.dwcdn.net/Da5oL" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="850"></iframe>
-            </div>
-            <div class="centered">
-                <a href="word_analysis.xlsx" download="word_analysis.xlsx">
-                    <button class="dlbutton">Download Underlying Data</button>
-                </a>
-                <a href="" id="downloadLink" download="">
-                    <button class="dlbutton" onclick="downloadChart()">Download Current Chart</button>
-                </a>
-            </div>
-
-            <hr>
-
-            <!-- longitudinal charts -->
-            <p class="centered">We also examined the volume of coverage the main three cable news networks dedicate to stories regarding Ukraine over the course of the war and compare it to the volume of stories about Ukraine mentioning either "corrupt", "Biden", or "Burisma". Surprisingly, all three outlets produce similar trends throughout their coverage.</p>
+<!-- instructions on how to use chart -->
+        <div class="boxed">
+            <h3>How to Use This Chart</h3>
+            
+            <li>First, select the year from which you would like to view the data.</li>
+            
+            <li>The chart will display each network's relative useage for each word.</li>
+            
+            <li>You can sort the chart for each network's values by clicking on the network name at the top of each column.</li>
+            
+            <li>By clicking on the column header, you will sort the values for that column in either ascending or descending order on alternate clicks indicated by a small arrow to the left of each network name.</li>
+            
+            <li>Red highlighted cells represent a higher value while blue highlighted cells represent a lower value.</li>
+            
+        </div>
 
             <br><br><br>
+<!-- word chart change by year -->
+        <p class="centered"><strong>Select Year:</strong>
+            <select id="yearSelector" onchange="switchVis(this.value)">
+                <option value="Da5oL">2021</option>
+                <option value="4ma8G">2022</option>
+                <option value="Qjx9t">2023</option>
+            </select>
+        </p>
 
-            <!-- <p>Alina to add a little note explaining the results below here</p> -->
-            <div class="longitudinal-charts">
-                <!-- chart 1 -->
-                <div class="iframe-container">
-                    <iframe title="MSNBC COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-dongo" src="https://datawrapper.dwcdn.net/dongo/1/" scrolling="yes" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="365" data-external="1"></iframe>
-                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                    </script>
-                    <a href="msnbc_coverage.png" download="msnbc_coverage.png">
+        <br>
+
+<!-- class for word chart -->
+        <div class = "centered">
+            
+            <iframe title="RELATIVE WORD USE IN UKRAINE COVERAGE" aria-label="Table" id="datawrapper-chart-Qjx9t" src="https://datawrapper.dwcdn.net/Da5oL" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="850"></iframe>
+            
+        </div>
+
+<!-- buttons to download data -->
+        <div class="centered">
+            <a href="word_analysis.xlsx" download="word_analysis.xlsx">
+                <button class="dlbutton">Download Underlying Data</button>
+            </a>
+            <a href="" id="downloadLink" download="">
+                <button class="dlbutton" onclick="downloadChart()">Download Current Chart</button>
+            </a>
+            
+        </div>
+
+        <hr>
+
+<!-- longitudinal charts -->
+        <p class="centered">We also examined the volume of coverage the main three cable news networks dedicate to stories regarding Ukraine over the course of the war and compare it to the volume of stories about Ukraine mentioning either "corrupt", "Biden", or "Burisma."
+
+        <br><br><br>
+
+<!-- key takeaways -->
+        <h3 class="centered" style="color:black">Key Takeaways</h3>
+            
+        <br>
+
+        <li>All three news outlets produced similar trends throughout their coverage of Ukraine and mentions of either "corrupt", "Biden", or "Burisma." Even into 2023, the coverage did not differ significantly.</li>
+
+        <br>
+
+        <li>Throughout the first 3 months of the war, CNN devoted on average 12.7% of their coverage on Ukraine, which was more than FOX (on average 8.3%) and MSNBC (on average 9.9%).</li>
+
+        <br>
+
+        <li>The average coverage devoted to mentions of "corrupt," "Biden," or "Burisma" within the first 3 months since the invasion did not differ significantly between the networks.
+
+        <br><br><br>
+
+<!-- the three charts -->
+
+        <div class="longitudinal-charts">
+
+<!-- chart 1 -->
+        <div class="iframe-container">
+            <iframe title="MSNBC COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-dongo" src="https://datawrapper.dwcdn.net/dongo/1/" scrolling="yes" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="365" data-external="1"></iframe>
+            
+            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+            </script>
+                
+            <a href="msnbc-coverage-of-ukraine.png" download="msnbc-coverage-of-ukraine.png">
                         <button class="dlbutton">Download Chart</button>
                     </a>
-                </div>
+        </div>
 
-                <br><br><br>
+        <br><br><br>
 
-                <!-- chart 2 -->
-                <div class="iframe-container">
-                    <iframe title="FOX NEWS COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-EON6G" src="https://datawrapper.dwcdn.net/EON6G/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="362" data-external="1"></iframe>
-                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                    </script>
-                    <a href="fox_coverage.png" download="fox_coverage.png">
+<!-- chart 2 -->
+        <div class="iframe-container">
+                <iframe title="FOX NEWS COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-EON6G" src="https://datawrapper.dwcdn.net/EON6G/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="362" data-external="1"></iframe>
+            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+            </script>
+            
+            <a href="fox-news-coverage-of-ukraine.png" download="fox-news-coverage-of-ukraine.png">
                         <button class="dlbutton">Download Chart</button>
                     </a>
-                </div>
+        </div>
 
-                <br><br><br>
+        <br><br><br>
 
-                <!-- chart 3 -->
-                <div class="iframe-container">
-                    <iframe title="CNN COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-4KBpv" src="https://datawrapper.dwcdn.net/4KBpv/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="391" data-external="1"></iframe>
-                    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
-                    </script>
-                    <a href="cnn_coverage.png" download="cnn_coverage.png">
-                        <button class="dlbutton">Download Chart</button>
+<!-- chart 3 -->
+        <div class="iframe-container">
+            
+            <iframe title="CNN COVERAGE OF UKRAINE" aria-label="Interactive area chart" id="datawrapper-chart-4KBpv" src="https://datawrapper.dwcdn.net/4KBpv/2/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="391" data-external="1"></iframe>
+            
+            <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+            </script>
+            
+            <a href="cnn-coverage-of-ukraine.png" download="cnn_coverage-of-ukraine.png">
+
+            <button class="dlbutton">Download Chart</button>
                     </a>
-                    <a href="network_ukraine_coverage.csv" download="network_ukraine_coverage.csv">
+            <a href="network_coverage_of_ukraine.csv" download="network_coverage_of_ukraine.csv">
                         <button class="dlbutton">Download Underlying Data</button>
                     </a>
-                </div>
-            </div>
+        </div>
+        </div>
         </div>
         <hr>
     </body>

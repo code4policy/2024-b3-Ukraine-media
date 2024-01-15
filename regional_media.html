@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>National Press</title>
+        <title>Regional Media</title>
         <link href="styles.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="main.js" defer></script>
         <link rel="icon" type="image/png" href="../Ukraine-flag-icon-on-transparent-background-PNG.png">
     </head>
 
-    <!-- navigation buttons -->
+<!-- navigation buttons -->
 <body>
     <div class="nav">
     <a href="index.html" class="button-link-inactive">Home</a>
@@ -19,24 +20,50 @@
     <a href="our-team/index.html" class="button-link-inactive">Our Team</a>
     <h1>Regional Media</h1>
 
-    <!-- state and local press -->
+<!-- introduction -->
     <div class="centered">
-        <p>While the war in Ukraine is not covered as heavily in local media, we also wanted to investigate whether there were trends in how the war is portrayed across different geographic regions within the United States.</p>
+        <p>While the war in Ukraine is not covered as heavily in local media, we also wanted to investigate whether there were trends in how the war is portrayed across different geographic regions within the United States. We used the same methodology as before, but limited our search for mentions of the term "Ukraine" to state and local media within each of the 50 US states.</p>
 
         <br>
 
-        <!-- map of the United States -->
-        <div style="min-height:550px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ot8aE/embed.js?v=2" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/ot8aE/full.png" alt="" /></noscript></div>
+<!-- key takeaways section -->
+        <h3 class="centered" style="color:black">Key Takeaways</h3>
 
-        <h5>Key Takeaways</h5>
+        <li>Senators from Indiana, Wisconsin, and Idaho are possibly contributing to the high percent of mentions in those states. The Senators have all raised concerns about further providing aid to Ukraine. For example, in a <a href="https://www.wpr.org/morning-show-senator-ron-johnson-aid-israel-ukraine-separate-bills">October 2023 interview</a>, Senator Ron Johnson of Wisconsin warned against "massive, ill-defined" aid packages to Israel and Ukraine in a single bill.</li>
+        
+        <br>
+        
+        <li>The high percent of mentions in Iowa and New Hampshire likely overlaps with the US presidential election, as Iowa is the first to caucus and New Hampshire is the first primary state. Ukraine is probably one of the things presidential candidates are discussing when campaigning in the states.</li>
+        
+        <br>
+        
+        <li>Kentucky, Virginia, West Virginia, and Maryland are all states that have senators who have been central in discussions for providing further aid to Ukraine because they either hold important leadership or committee positions. For instance, Senator Ben Cardin of Maryland is chair of the Senate Foreign Relations Committee. It is probably why there is such a higher percent of mentions in those states.</li>
 
-        <ul>
-            <li>Senators from Indiana, Wisconsin, and Idaho are possibly contributing to the high percent of mentions in those states. The Senators have all raised concerns about further providing aid to Ukraine. For example, in a <a href="https://www.wpr.org/morning-show-senator-ron-johnson-aid-israel-ukraine-separate-bills">October 2023 interview</a>, Senator Ron Johnson of Wisconsin warned against "massive, ill-defined" aid packages to Israel and Ukraine in a single bill.</li>
-            <br>
-            <li>The high percent of mentions in Iowa and New Hampshire likely overlaps with the US presidential election, as Iowa is the first to caucus and New Hampshire is the first primary state. Ukraine is probably one of the things presidential candidates campaign in the states are talking about.</li>
-            <br>
-            <li>Kentucky, Virginia, and West Virginia, and Maryland are all states that have senators who have been central in discussions for providing further aid to Ukraine because they either hold important leadership or committee positions. For instance, Senator Ben Cardin of Maryland is chair of the Senate Foreign Relations Committee. It is probably why there is such a higher percent of mentions in those states.</li>
-        </ul>
+        <br>
+
+<!-- map of the United States -->
+    <div style="min-height:550px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/ot8aE/embed.js?v=2" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/ot8aE/full.png" alt="" /></noscript></div>
     </div>
+
+<!-- buttons to download the map and data -->
+    <div style="display: flex; gap: 20px; justify-content: center; margin-top: 20px;">
+
+    <a href="mentions-of-ukraine-in-state-local-media-by-quartiles.png" download="mentions-of-ukraine-in-state-local-media-by-quartiles.png">
+
+    <button class="dlbutton">Download Map</button></a>
+    
+    <a href="regional_mentions.csv" download="regional_mentions.csv">
+    
+    <button class="dlbutton">Download Underlying Data</button></a>
+    </div>
+
+
+
+
+
+
+
+
+
 </body>
 </html>

@@ -82,8 +82,6 @@ li {
   	font-weight: 1000;
   	background-color: #1b4965;
   	color: #fff;
-
-
 }
 
 .centered {
@@ -338,7 +336,17 @@ li {
 .wordcloud-title {
     font-weight: bold;
     color: black;
-    margin-bottom: 5px; /* Add some margin below the title */
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.wordcloud-footnote {
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    text-align: left;
+    margin-bottom: 5px;
 }
 
 .wordcloud-image {
